@@ -4,5 +4,8 @@ _server/out/*.png
 _server/node_modules
 _site
 
+.tool-versions
+vendor/
+
 # Local Netlify folder
 .netlify

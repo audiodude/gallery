@@ -19,7 +19,7 @@ defaults:
       type: 2d
     values:
       layout: 2d
-      date: 2013-01-01
+      date: '2013-01-01'
       show_date: false
   - scope:
       path: ""
