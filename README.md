@@ -53,9 +53,9 @@ node index.js
 
 ## Deployment
 
-The site is hosted on Netlify, but is not linked to this repository — pushes
-do not trigger builds. Deploy by building locally and pushing `_site/` with
-the Netlify CLI:
+The site is hosted on Netlify and linked to this repository: pushes to `main`
+trigger a build (`bundle exec jekyll build`, publishing `_site/`) via a GitHub
+webhook and deploy key. A manual deploy is also possible with the CLI:
 
 ```sh
 bundle exec jekyll build
