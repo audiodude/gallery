@@ -15,3 +15,41 @@ a:visited {
 .hid {
   display: none;
 }
+
+#motion-gate {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#motion-gate-box {
+  max-width: 30em;
+  padding: 2em;
+  color: #ccc;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 1.5;
+}
+
+#motion-gate-play {
+  margin-top: 1em;
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  color: #ccc;
+  background: #222;
+  border: 1px solid #888;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#motion-gate-play:hover {
+  background: #333;
+  color: #fff;
+}

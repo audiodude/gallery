@@ -21,6 +21,11 @@ Front matter on each piece controls its title, date, and optional `music`
 each sketch with playback controls, an info panel, and Open Graph metadata; the
 index page lists every piece in both collections, newest first.
 
+Visitors with the OS-level "reduce motion" accessibility setting enabled
+(`prefers-reduced-motion`) don't get autoplaying artwork: `js/motion-gate.js`
+holds the sketch scripts and music behind a click-to-play overlay until they
+press play.
+
 ## Running locally
 
 Requires Ruby with Bundler.

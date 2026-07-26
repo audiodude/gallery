@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="/css/controls.css">
   <link rel="stylesheet" href="/css/3d.css">
   {% include analytics.html %}
+  <script src="/js/motion-gate.js"></script>
 </head>
 <body>
   {% if page.music %}
@@ -46,6 +47,6 @@
 	<script src="/js/three.min.js"></script>
   <script src="/js/controls.js"></script>
   <script src="/js/capture.js"></script>
-  {{page.content}}
+  {{page.content | replace: '<script type="text/javascript">', '<script type="text/plain" class="gated">'}}
 </body>
 </html>
