@@ -53,8 +53,14 @@ node index.js
 
 ## Deployment
 
-The site is deployed to Netlify, which builds it with Jekyll and publishes
-`_site/`. Pushes to `main` deploy automatically.
+The site is hosted on Netlify, but is not linked to this repository — pushes
+do not trigger builds. Deploy by building locally and pushing `_site/` with
+the Netlify CLI:
+
+```sh
+bundle exec jekyll build
+netlify deploy --prod --dir _site --site 56dc7cda-3373-4cc4-8dd1-99ce2b350158
+```
 
 ## License
 
