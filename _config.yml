@@ -3,7 +3,7 @@ safe: true
 lsi: false
 exclude: [
   'Gemfile', 'Gemfile.lock', 'netlify.toml', 'pubstorm.json', 'README.md',
-  'LICENSE', 'CNAME'
+  'LICENSE', 'CNAME', 'deploy.sh'
 ]
 destination: _site
 

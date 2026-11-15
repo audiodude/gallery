@@ -28,7 +28,8 @@ press play.
 
 ## Running locally
 
-Requires Ruby with Bundler.
+Requires Ruby 3.4.9 (pinned in `.ruby-version`, which Netlify also reads) with
+Bundler.
 
 ```sh
 bundle install
@@ -55,12 +56,15 @@ node index.js
 
 The site is hosted on Netlify and linked to this repository: pushes to `main`
 trigger a build (`bundle exec jekyll build`, publishing `_site/`) via a GitHub
-webhook and deploy key. A manual deploy is also possible with the CLI:
+webhook and deploy key. A manual deploy is also possible with the Netlify CLI:
 
 ```sh
-bundle exec jekyll build
-netlify deploy --prod --dir _site --site 56dc7cda-3373-4cc4-8dd1-99ce2b350158
+./deploy.sh
 ```
+
+This builds the site, refuses to publish if `_site/` contains dotfiles or
+key/credential files, then runs `netlify deploy --prod --dir _site`. Extra
+arguments are passed through to `netlify deploy`.
 
 ## License
 
